@@ -1,0 +1,25 @@
+:root{
+  --white:'#ffffff';
+  --black: #000;
+  --primary:#6e3bd1;
+  --secondary: #42444a;
+  --MNRPLR: 'Manrope';
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: local('ManropeRegular'), url('./fonts/ttf/ManropeRegular.ttf') format('truetype');
+}
+
+body {
+  margin: 0;
+  font-family: var(--MNRPLR) !important;
+}
+
+code {
+  font-family: var(--MNRPLR) !important;
+}
+
+.ant-message {
+  left: 90% !important;
+}

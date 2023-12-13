@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "assets/*": ["./assets/*"],
+      "fonts/*": ["./fonts/*"],
+      "components/*": ["./components/*"],
+      "constants/*": ["./constants/*"],
+      "hooks/*": ["./hooks/*"],
+      "utils/*": ["./utils/*"],
+      "store/*": ["./store/*"],
+      "types/*": ["./types/*"],
+      "layouts/*": ["./layouts/*"],
+      "pages/*": ["./pages/*"],
+      "routes/*": ["./routes/*"],
+      "styles/*": ["./styles/*"],
+      "scripts/*": ["./scripts/*"]
+    }
+  },
+  "extends": "./tsconfig.paths.json",
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,25 @@
+.main-layout {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.main-header {
+  height: 56px;
+  background-color: var(--white);
+  padding-inline: 40px;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main-content {
+  height: calc(100vh - 56px);
+  overflow: auto;
+  &::-webkit-scrollbar {
+    width: 5px;
+    background-color: var(--white);
+  }
+  &::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 3px;
+  }
+}

@@ -1,0 +1,39 @@
+@import 'styles/variable.less';
+
+.create-user-modal {
+  .ant-modal-content {
+    border-radius: 4px;
+  }
+  .add-user-org {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-top: 0.5px solid @borderclr;
+    padding-top: 16px;
+    > div {
+      .flexAlignCenter();
+      justify-content: space-between;
+      > div:first-child {
+        width: unset;
+        font-size: 14px;
+      }
+      > div:last-child {
+        > input {
+          width: 300px;
+          border: 0.5px solid @borderclr;
+          font-size: 14px;
+          font-weight: 600;
+          color: @primary;
+          padding: 4px;
+          border-radius: 4px;
+        }
+        >div{
+          color: @red;
+        }
+      }
+      &:last-child {
+        justify-content: flex-end;
+      }
+    }
+  }
+}

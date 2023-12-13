@@ -1,0 +1,174 @@
+@import 'styles/variable.less';
+
+.main-org {
+  height: 100%;
+  padding: 24px 96px;
+  .org-label {
+    margin-bottom: 20px;
+    > span {
+      .fs-22();
+      .fw-600();
+      color: @titleColor;
+    }
+  }
+  .org-member {
+    > div:first-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      > span {
+        position: relative;
+        font-size: 17px;
+        .fw-600();
+        color: @primary;
+        border-bottom: 3px solid @primary;
+        padding-bottom: 11px;
+      }
+      > button {
+        margin-bottom: 11px;
+        width: 93px;
+        height: 32px;
+        background-color: @grayshade;
+        color: @white;
+        border-radius: 4px;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.15);
+        &:hover {
+          border: 0.5px solid @white;
+          color: @white;
+        }
+      }
+    }
+    > div:last-child {
+      margin-top: 0px;
+      margin-bottom: 32px;
+      border-color: @borderclr;
+    }
+  }
+  .add-member-form {
+    .add-member-content {
+      margin-bottom: 24px;
+
+      .member-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        .input-main-content {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          gap: 64px;
+          > div {
+            display: flex;
+            flex-direction: column;
+            .form-title {
+              margin-bottom: 8px;
+              .fw-500();
+              .fs-14();
+              color: @secondary;
+            }
+            .add-member-input {
+              width: 299px;
+              border-radius: 4px;
+              color: @primary !important;
+              padding: 4px 16px;
+              border: 1px solid @borderclr;
+              @media (max-width: 1100px) {
+                width: 240px;
+              }
+              @media (max-width: 980px) {
+                width: 200px;
+              }
+            }
+            .add-member-select {
+              position: relative;
+              width: 299px;
+              color: #696b72;
+              @media (max-width: 1100px) {
+                width: 240px;
+              }
+              @media (max-width: 980px) {
+                width: 200px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .user-list-table {
+    height: calc(100% - 220px);
+    border-radius: 4px;
+    border: 0.5px solid @borderclr;
+    background-color: @white;
+    .user-table {
+      height: 100%;
+      > div {
+        height: 100%;
+        > div {
+          height: 100%;
+          > div {
+            border-radius: 4px 4px 0 0;
+            height: 100%;
+            background-color: unset;
+            > div {
+              height: 100%;
+            }
+          }
+        }
+      }
+      .ant-table-body {
+        overflow: auto;
+        &::-webkit-scrollbar {
+          width: 5px;
+          background-color: @white;
+        }
+        &::-webkit-scrollbar-thumb {
+          background: @subheader;
+          border-radius: 3px;
+        }
+      }
+      table {
+        border-radius: 4px;
+        thead {
+          tr {
+            th {
+              background-color: #f3f3f3;
+              color: @grayshade;
+              .fs-14();
+              .fw-600();
+              line-height: 20px;
+              &:first-child {
+                border-start-start-radius: 4px !important;
+                &::before {
+                  display: none;
+                }
+              }
+            }
+            > td {
+              background-color: #f3f3f3;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              color: #696b72;
+              background-color: @white;
+              .fs-14();
+              .fw-500();
+              padding: 10.5px 16px;
+              .actions-div{
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                >svg{
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
